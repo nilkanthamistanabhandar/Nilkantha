@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>নীলকণ্ঠ মিষ্টান্ন ভাণ্ডার - Bengali Sweets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>नीलकंठ मिष्टान्न भण्डार</h1>
+        <p class="tagline">Authentic Bengali Sweets & Confectionery</p>
+      </div>
+      <nav class="navbar">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#sweets" class="nav-link">Sweets</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#order" class="nav-link btn-order">Order Now</a>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Welcome to Nilkanto Mistanna Bhandar</h2>
+      <p>Experience the authentic taste of traditional Bengali sweets since generations</p>
+      <button class="btn btn-primary" onclick="document.getElementById('sweets').scrollIntoView({behavior: 'smooth'})">Explore Our Sweets</button>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured">
+    <div class="container">
+      <div class="feature-card">
+        <span class="icon">🍬</span>
+        <h3>Fresh Daily</h3>
+        <p>Made fresh every morning with the finest ingredients</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">✨</span>
+        <h3>100% Authentic</h3>
+        <p>Traditional recipes passed down through generations</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">🚚</span>
+        <h3>Fast Delivery</h3>
+        <p>Quick and reliable delivery service available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sweets Menu Section -->
+  <section class="sweets" id="sweets">
+    <div class="container">
+      <h2>Our Popular Sweets</h2>
+      <p class="section-subtitle">Handcrafted with love and tradition</p>
+      
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="milk-based">Milk-Based</button>
+        <button class="filter-btn" data-filter="flour-based">Flour-Based</button>
+        <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+      </div>
+
+      <div class="sweets-grid" id="sweets-grid">
+        <!-- Sweets items will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>Nilkanto Mistanna Bhandar has been serving authentic Bengali sweets for over 30 years. Our commitment to quality, freshness, and traditional recipes has made us a trusted name in the sweet industry.</p>
+          <p>We use only the finest milk, ghee, and natural ingredients. Every sweet is carefully prepared by our experienced craftsmen to ensure the perfect taste and texture that our customers love.</p>
+          <ul class="about-list">
+            <li>✓ Premium quality ingredients</li>
+            <li>✓ Traditional recipes</li>
+            <li>✓ Expert craftsmen</li>
+            <li>✓ Hygienic preparation</li>
+            <li>✓ Same-day delivery available</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">🏪</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order" id="order">
+    <div class="container">
+      <h2>Place Your Order</h2>
+      <form class="order-form" id="orderForm">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="sweets">Select Sweets (Quantity in kg) *</label>
+          <textarea id="sweets" name="sweets" placeholder="e.g., Rasgulla - 1kg, Sandesh - 500g" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Delivery Address *</label>
+          <textarea id="address" name="address" placeholder="Enter your full delivery address" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>📞 Phone</h3>
+          <p>+91 98765 43210</p>
+          <p>+91 87654 32109</p>
+        </div>
+        <div class="contact-card">
+          <h3>📧 Email</h3>
+          <p>nilkantosweets@gmail.com</p>
+          <p>orders@nilkantosweets.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>📍 Location</h3>
+          <p>Kolkata, West Bengal</p>
+          <p>India - 700001</p>
+        </div>
+        <div class="contact-card">
+          <h3>⏰ Hours</h3>
+          <p>Mon - Sat: 9:00 AM - 9:00 PM</p>
+          <p>Sunday: 10:00 AM - 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Nilkanto Mistanna Bhandar | All Rights Reserved</p>
+      <p>Serving authentic Bengali sweets with love and tradition</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
